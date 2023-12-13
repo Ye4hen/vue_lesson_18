@@ -1,0 +1,191 @@
+*,
+*::before,
+*::after{
+padding: 0;
+margin: 0;
+border: 0;
+box-sizing: inherit;
+}
+html{
+font-size:100%;
+box-sizing:border-box;
+}
+body{
+padding: 0;
+margin: 0;
+line-height: 1;
+font-size: 1rem;
+color:#000;
+background:#fff;
+}
+a,
+a:visited,
+a:active{
+text-decoration: none;
+}
+// ul,
+// ol,
+// li{
+// list-style: none;
+// }
+img{
+vertical-align: top;
+}
+a,
+button,
+svg{
+cursor: pointer;
+}
+
+select, input{
+	border: 1px solid #000 !important;
+}
+
+/*===========================================================================================*/
+
+.title{
+	font-size: 40px;
+	font-weight: 700;
+	&:not(:last-child){
+		margin-bottom: 30px;
+	}
+}
+
+.small-title{
+	font-size: 30px;
+	font-weight: 600;
+	&:not(:last-child){
+		margin-bottom: 20px;
+	}
+}
+
+.container{
+	max-width: 1200px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+.err-msg{
+	font-size: 18px;
+	font-weight: 700;
+	color: red;
+}
+
+/*===========================================================================================*/
+
+.header {
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+	
+	&__lang {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+/*===========================================================================================*/
+
+.friends {
+	
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+}
+
+.list {
+	display: grid;
+	gap: 20px;
+	justify-content: center;
+	li{
+		justify-self: start;
+	}
+}
+
+.item {
+	display: grid;
+	grid-template-columns: 200px 200px;
+	align-items: center;
+	gap: 15px;
+	&__name {
+		justify-self: start;
+		font-size: 20px;
+	}
+}
+
+.add{
+	display: grid;
+	width: 800px;
+	margin: 0 auto;
+	align-items: center;
+	gap: 30px;
+	&-items{
+		display: grid;
+		gap: 30px;
+	}
+
+	&-item{
+		input{
+			width: 100%;
+		}
+	}
+}
+
+.presents {
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+}
+
+
+/*===========================================================================================*/
+
+.assignments {
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	&__title {}
+
+	&__list {}
+
+	&__item {}
+
+	&__name {}
+
+	&__selects {
+		display: flex;
+		justify-content: center;
+		gap: 50px;
+	}
+
+	&__select {
+		display: grid;
+		justify-content: start;
+		gap: 15px;
+	}
+
+	button{
+		margin: 0 auto;
+	}
+}
